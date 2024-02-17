@@ -48,6 +48,5 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
-    implementation(libs.auth.kakao)
     debugImplementation(libs.compose.ui.tooling)
 }

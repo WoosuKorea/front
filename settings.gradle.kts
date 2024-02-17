@@ -4,6 +4,7 @@ pluginManagement {
         google()
         gradlePluginPortal()
         mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 
@@ -11,7 +12,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url = uri("https://devrepo.kakao.com/nexus/content/groups/public/") }
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 

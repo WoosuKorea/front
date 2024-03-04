@@ -8,6 +8,12 @@ plugins {
     alias(libs.plugins.compose)
 }
 
+buildscript {
+    dependencies {
+        classpath(libs.moko.resources.generator)
+    }
+}
+
 allprojects {
     repositories {
         google()

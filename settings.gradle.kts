@@ -19,6 +19,3 @@ dependencyResolutionManagement {
 rootProject.name = "KoreaHistory"
 include(":androidApp")
 include(":shared")
-include(":data")
-include(":data")
-include(":domain")

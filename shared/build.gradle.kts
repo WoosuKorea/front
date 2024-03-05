@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.compose)
+    alias(libs.plugins.kotlinSerialization)
     id ("dev.icerock.mobile.multiplatform-resources")
 }
 
@@ -31,6 +32,8 @@ kotlin {
                 implementation(compose.runtime)
                 implementation(compose.material)
                 implementation(compose.foundation)
+                implementation(libs.decompose)
+                implementation(libs.decompose.jetbrains)
                 implementation("org.jetbrains.kotlinx:atomicfu:0.20.2")
             }
         }
@@ -65,6 +68,9 @@ android {
 
     sourceSets {
         named("main") {
+            manifest.srcFile("src/androidMain/AndroidManifest.xml")
+            res.srcDirs("src/androidMain/res")
+            resources.srcDirs("src/commonMain/resources")
             java.srcDirs("build/generated/moko/androidMain/src")
         }
     }

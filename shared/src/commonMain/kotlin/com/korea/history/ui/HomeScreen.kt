@@ -8,25 +8,24 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-
-import com.korea.history.navigation.MainScreenComponent
-import com.korea.history.navigation.MainScreenEvent
-import com.korea.history.theme.Wussu_Error
+import com.korea.history.navigation.HomeScreenComponent
+import com.korea.history.theme.Wussu_Black
+import com.korea.history.theme.Wussu_White
 import com.korea.history.theme.displayL
 
 @Composable
-fun MainScreen(main: MainScreenComponent) {
-
+fun HomeScreen(home: HomeScreenComponent) {
     Box(
         modifier = Modifier
-            .background(Wussu_Error)
+            .background(Wussu_Black)
             .fillMaxSize(),
         contentAlignment = Alignment.Center,
     ) {
         Text(
-            text = "Main",
+            text = "Home",
             style = displayL(),
-            modifier = Modifier.clickable { main.onEvent(MainScreenEvent.ClickImageCard) }
+            color = Wussu_White,
+            modifier = Modifier.clickable { home.goBack() }
         )
     }
 }

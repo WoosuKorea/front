@@ -1,8 +1,15 @@
 package com.korea.history
 
 import androidx.compose.ui.window.ComposeUIViewController
-import com.korea.history.ui.MainScreen
+import com.arkivanov.decompose.DefaultComponentContext
+import com.korea.history.navigation.RootComponent
+import com.arkivanov.essenty.lifecycle.LifecycleRegistry
+import androidx.compose.runtime.remember
+import com.korea.history.ui.WussuApp
 
 fun MainUIViewController() = ComposeUIViewController {
-    MainScreen()
+    val root = remember {
+        RootComponent(DefaultComponentContext(LifecycleRegistry()))
+    }
+    WussuApp(root)
 }

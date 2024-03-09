@@ -39,77 +39,77 @@ fun displayL(): TextStyle = pretendardBoldStyle.copy(
 )
 
 @Composable
-fun Typography.displayM(): TextStyle = pretendardBoldStyle.copy(
+fun displayM(): TextStyle = pretendardBoldStyle.copy(
     fontSize = 24.sp,
     lineHeight = 34.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.bold),
 )
 
 @Composable
-fun Typography.headlineL(): TextStyle = pretendardBoldStyle.copy(
+fun headlineL(): TextStyle = pretendardBoldStyle.copy(
     fontSize = 20.sp,
     lineHeight = 28.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.bold),
 )
 
 @Composable
-fun Typography.headlineM(): TextStyle = pretendardBoldStyle.copy(
+fun headlineM(): TextStyle = pretendardBoldStyle.copy(
     fontSize = 18.sp,
     lineHeight = 25.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.bold),
 )
 
 @Composable
-fun Typography.headlineS(): TextStyle = pretendardBoldStyle.copy(
+fun headlineS(): TextStyle = pretendardBoldStyle.copy(
     fontSize = 16.sp,
     lineHeight = 22.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.bold),
 )
 
 @Composable
-fun Typography.labelL(): TextStyle = pretendardSemiBoldStyle.copy(
+fun labelL(): TextStyle = pretendardSemiBoldStyle.copy(
     fontSize = 16.sp,
     lineHeight = 22.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.semiBold),
 )
 
 @Composable
-fun Typography.labelM(): TextStyle = pretendardSemiBoldStyle.copy(
+fun labelM(): TextStyle = pretendardSemiBoldStyle.copy(
     fontSize = 14.sp,
     lineHeight = 20.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.semiBold),
 )
 
 @Composable
-fun Typography.labelS(): TextStyle = pretendardSemiBoldStyle.copy(
+fun labelS(): TextStyle = pretendardSemiBoldStyle.copy(
     fontSize = 11.sp,
     lineHeight = 15.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.semiBold),
 )
 
 @Composable
-fun Typography.bodyL(): TextStyle = pretendardRegularStyle.copy(
+fun bodyL(): TextStyle = pretendardRegularStyle.copy(
     fontSize = 16.sp,
     lineHeight = 22.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.regular),
 )
 
 @Composable
-fun Typography.bodyM(): TextStyle = pretendardRegularStyle.copy(
+fun bodyM(): TextStyle = pretendardRegularStyle.copy(
     fontSize = 14.sp,
     lineHeight = 20.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.regular),
 )
 
 @Composable
-fun Typography.bodyS(): TextStyle = pretendardRegularStyle.copy(
+fun bodyS(): TextStyle = pretendardRegularStyle.copy(
     fontSize = 12.sp,
     lineHeight = 17.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.regular),
 )
 
 @Composable
-fun Typography.bodyS2(): TextStyle = pretendardRegularStyle.copy(
+fun bodyS2(): TextStyle = pretendardRegularStyle.copy(
     fontSize = 11.sp,
     lineHeight = 15.sp,
     fontFamily = fontFamilyResource(MR.fonts.Pretendard.regular),

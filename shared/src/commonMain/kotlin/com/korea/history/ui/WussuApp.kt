@@ -7,6 +7,7 @@ import com.arkivanov.decompose.extensions.compose.jetbrains.stack.animation.slid
 import com.arkivanov.decompose.extensions.compose.jetbrains.stack.animation.stackAnimation
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
 import com.korea.history.navigation.RootComponent
+import com.korea.history.ui.home.HomeScreen
 
 @Composable
 fun WussuApp(root: RootComponent) {

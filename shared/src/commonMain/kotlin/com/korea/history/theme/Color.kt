@@ -3,6 +3,8 @@ package com.korea.history.theme
 import androidx.compose.ui.graphics.Color
 
 val Primary = Color(0xFFFFAA40)
+val PrimaryLight = Color(0xFFFFF5DE)
+val PrimaryLight2 = Color(0xFFFEEFD1)
 val SubPrimary = Color(0xFFFFCD4B)
 
 val Wussu_Black = Color(0xFF000000)
@@ -15,5 +17,7 @@ val Gray600 = Color(0xFFDFDFDF)
 val Gray700 = Color(0xFFECECEC)
 val Gray800 = Color(0xFFF4F4F4)
 val Gray900 = Color(0xFFFBFBFB)
+val Done = Color(0xFF4C4338)
+val BackGround = Color(0xFFF7F5F2)
 val Wussu_White = Color(0xFFFFFFFF)
 val Wussu_Error = Color(0xFFEF523D)

@@ -34,6 +34,8 @@ kotlin {
                 implementation(compose.foundation)
                 implementation(libs.decompose)
                 implementation(libs.decompose.jetbrains)
+                implementation(libs.coil.compose)
+                implementation(libs.coil.network)
                 implementation("org.jetbrains.kotlinx:atomicfu:0.20.2")
             }
         }

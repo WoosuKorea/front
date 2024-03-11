@@ -20,6 +20,7 @@ atomicfu = "0.20.2"
 decompose = "2.2.2"
 extensions-compose-jetbrains = "2.1.4-compose-experimental"
 kotlinx-serialization-json = "1.6.1"
+coil3 = "3.0.0-alpha01"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -45,6 +46,9 @@ ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
 ktor-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 atomicfu = { group = "org.jetbrains.kotlinx:atomicfu", name = "atomicfu", version.ref = "atomicfu" }
+
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil3" }
+coil-network = { group = "io.coil-kt.coil3", name = "coil-network", version.ref = "coil3" }
 
 # Navigation
 decompose = { group = "com.arkivanov.decompose", name = "decompose", version.ref = "decompose" }

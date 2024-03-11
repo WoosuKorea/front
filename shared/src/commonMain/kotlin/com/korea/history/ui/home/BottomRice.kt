@@ -14,7 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.korea.history.theme.Gray800
 import com.korea.history.theme.Wussu_White
 
 @Composable
@@ -42,13 +41,7 @@ fun BottomRice(
                     .fillMaxHeight(),
             )
 
-            Box(
-                modifier = Modifier
-                    .background(Gray800, shape = RoundedCornerShape(16.dp))
-                    .weight(1f)
-                    .fillMaxHeight(),
-            ) {
-            }
+            CountRice(Modifier.weight(1f))
         }
     }
 }

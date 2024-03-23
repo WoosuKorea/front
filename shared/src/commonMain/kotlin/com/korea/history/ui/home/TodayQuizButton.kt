@@ -13,11 +13,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.korea.history.image.IconPack
-import com.korea.history.image.iconpack.IconRiceSmall
+import com.korea.history.MR
 import com.korea.history.theme.Primary
 import com.korea.history.theme.Wussu_White
 import com.korea.history.theme.headlineM
+import dev.icerock.moko.resources.compose.painterResource
 
 @Composable
 fun TodayQuizButton(
@@ -38,7 +38,10 @@ fun TodayQuizButton(
             )
             Spacer(Modifier.width(10.dp))
             Image(
-                imageVector = IconPack.IconRiceSmall,
+                modifier = Modifier
+                    .height(26.dp)
+                    .width(26.dp),
+                painter = painterResource(MR.images.image_rice_light),
                 contentDescription = null
             )
         }

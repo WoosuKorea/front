@@ -24,6 +24,7 @@ fun HomeScreen(home: HomeScreenComponent) {
             .background(BackGround)
             .fillMaxSize(),
     ) {
+        HomeImage(Modifier.align(Alignment.Center))
         WussuChip(
             modifier = Modifier
                 .height(41.dp)

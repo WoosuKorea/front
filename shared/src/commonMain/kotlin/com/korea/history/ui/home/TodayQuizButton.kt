@@ -42,7 +42,7 @@ fun TodayQuizButton(
                     .height(26.dp)
                     .width(26.dp),
                 painter = painterResource(MR.images.image_rice_light),
-                contentDescription = null
+                contentDescription = null,
             )
         }
     }

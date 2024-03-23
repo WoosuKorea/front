@@ -23,14 +23,15 @@ fun BottomRice(
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .height(154.dp)
+            .height(180.dp)
             .background(color = Wussu_White, shape = RoundedCornerShape(topEnd = 28.dp, topStart = 28.dp)),
         contentAlignment = Alignment.BottomCenter,
     ) {
         Row(
             modifier = Modifier
-                .padding(horizontal = 20.dp, vertical = 16.dp)
+                .padding(start = 20.dp, end = 20.dp, top = 42.dp)
                 .fillMaxWidth()
+                .align(Alignment.TopCenter)
                 .height(93.dp),
         ) {
             CompletionGaugeRice(Modifier.weight(3f))

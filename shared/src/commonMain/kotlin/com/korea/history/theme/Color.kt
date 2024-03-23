@@ -5,7 +5,8 @@ import androidx.compose.ui.graphics.Color
 val Primary = Color(0xFFFFAA40)
 val PrimaryLight = Color(0xFFFFF5DE)
 val PrimaryLight2 = Color(0xFFFEEFD1)
-val SubPrimary = Color(0xFFFFCD4B)
+val SubCoin = Color(0xFFFFCD4B)
+val SubColor = Color(0xFFAAD400)
 
 val Wussu_Black = Color(0xFF000000)
 val Gray100 = Color(0xFF171717)

@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.korea.history.MR
+import com.korea.history.getPlatformName
 import com.korea.history.theme.Gray400
 import com.korea.history.theme.SubCoin
 import com.korea.history.theme.SubColor
@@ -21,11 +22,14 @@ fun MyQuizInfo(
     modifier: Modifier,
 ) {
     Row(modifier = modifier) {
+        val topMargin = if (getPlatformName() == "IOS") 61.dp else 11.dp
+        val height = if (getPlatformName() == "IOS") 91.dp else 41.dp
+
         WussuChip(
             modifier = Modifier
-                .height(41.dp)
+                .height(height)
                 .width(77.dp)
-                .padding(top = 11.dp),
+                .padding(top = topMargin),
         ) {
             WussuChipContent(
                 modifier = Modifier.align(Alignment.Center),
@@ -37,9 +41,9 @@ fun MyQuizInfo(
         Spacer(Modifier.width(8.dp))
         WussuChip(
             modifier = Modifier
-                .height(41.dp)
+                .height(height)
                 .width(77.dp)
-                .padding(top = 11.dp),
+                .padding(top = topMargin),
         ) {
             WussuChipContent(
                 modifier = Modifier.align(Alignment.Center),
@@ -51,9 +55,9 @@ fun MyQuizInfo(
         Spacer(Modifier.width(8.dp))
         WussuChip(
             modifier = Modifier
-                .height(41.dp)
+                .height(height)
                 .width(97.dp)
-                .padding(top = 11.dp, end = 20.dp),
+                .padding(top = topMargin, end = 20.dp),
         ) {
             WussuChipContent(
                 modifier = Modifier.align(Alignment.Center),

@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.korea.history.MR
+import com.korea.history.getPlatformName
 import com.korea.history.navigation.HomeScreenComponent
 import com.korea.history.theme.BackGround
 import com.korea.history.utils.WussuChip
@@ -25,11 +26,13 @@ fun HomeScreen(home: HomeScreenComponent) {
             .fillMaxSize(),
     ) {
         HomeImage(Modifier.align(Alignment.Center))
+        val topMargin = if (getPlatformName() == "IOS") 61.dp else 11.dp
+        val height = if (getPlatformName() == "IOS") 91.dp else 41.dp
         WussuChip(
             modifier = Modifier
-                .height(41.dp)
+                .height(height)
                 .width(50.dp)
-                .padding(start = 20.dp, top = 11.dp),
+                .padding(start = 20.dp, top = topMargin),
         ) {
             Image(
                 modifier = Modifier
